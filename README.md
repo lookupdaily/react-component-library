@@ -1,4 +1,4 @@
-#React component library
+# React component library
 
 ## Viewing the components in storybook
 
