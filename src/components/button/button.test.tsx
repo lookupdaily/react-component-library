@@ -22,4 +22,13 @@ describe('Button', () => {
 
     expect(clickAction).toHaveBeenCalledTimes(1);
   });
+
+  it('adds a class for a type prop', () => {
+    render(
+      <Button click={() => ''} type="primary">
+        Do something
+      </Button>
+    );
+    expect(screen.queryByRole('button')).toHaveClass('primary');
+  });
 });
