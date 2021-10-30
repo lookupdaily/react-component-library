@@ -6,5 +6,9 @@ interface Props {
 }
 
 export const Button: FunctionComponent<Props> = ({ click, children }) => {
-  return <button type="button" onClick={click}>{children}</button>;
+  return (
+    <button type="button" onClick={click}>
+      {children}
+    </button>
+  );
 };
