@@ -1,19 +1,29 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 
-interface Props {
+export interface ButtonProps {
   children: ReactNode;
   click: () => void;
-  type?: string;
+  type?: Type;
 }
 
-export const Button: FunctionComponent<Props> = ({ click, children, type }) => {
+type Type =
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'outline'
+  | 'danger'
+  | 'link'
+  | '';
+
+export const Button: FunctionComponent<ButtonProps> = ({
+  click,
+  children,
+  type,
+}) => {
+  const className = `button ${type}`;
   return (
-    <button type="button" onClick={click} className={type}>
+    <button type="button" onClick={click} className={className}>
       {children}
     </button>
   );
-};
-
-Button.defaultProps = {
-  type: '',
 };

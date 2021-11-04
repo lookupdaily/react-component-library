@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Button Default 1`] = `
+<button
+  className="button undefined"
+  type="button"
+>
+  My Button
+</button>
+`;

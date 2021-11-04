@@ -1,0 +1,29 @@
+button {
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+}
+.button {
+  border: 2px;
+  border-radius: 0;
+  padding: 1.3125rem 0.6875rem;
+}
+
+.primary {
+  border-color: #282727;
+  background-color: #282727;
+  color: #F2F2F2;
+}
+
+.secondary {
+  border-color: #282727;
+  color: #282727;
+  background-color: #F2F2F2;
+}
